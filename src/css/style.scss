@@ -1,5 +1,6 @@
-@import "compass/reset";
-@import "compass/css3";
+@import "../../node_modules/compass-mixins/lib/compass/reset";
+@import "../../node_modules/compass-mixins/lib/compass/css3";
+
 
 $color-gray: #d1d1d1;
 $color-gray3: #d7d7d7;
@@ -11,7 +12,7 @@ $font-family: 'Helvetica Neue', Helvetica, Arial, "Microsoft YaHei", sans-serif;
 //iconfont
 @font-face {
   font-family: "iconfont";
-  src: url('../src/iconfont.ttf') format('truetype'); /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  src: url('./font/iconfont.ttf') format('truetype'); /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
 }
 
 .iconfont {
@@ -125,10 +126,12 @@ a {
     display: block;
     width: 200px;
     height: 200px;
+    border-radius: 50%;
     margin: 0 auto;
     @media screen and(max-width: 720px){
       width: 150px;
       height: 150px;
+      border-radius: 50%;
     }
   }
   .name {
