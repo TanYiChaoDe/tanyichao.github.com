@@ -353,6 +353,10 @@ a {
   .section-bd {
     overflow: hidden;
   }
+  .section-span{
+    text-indent: 2em;
+    display: inline-block;
+  }
   .section-title-l,
   .section-title-r {
     position: absolute;
